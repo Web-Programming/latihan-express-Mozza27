@@ -8,6 +8,7 @@ require('./app_server/models/db');
 
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
+var mhsRouter = require('./app_server/routes/mahasiswa');
 
 // Impor modul mahasiswa router
 var mahasiswaControllers = require('./app_server/routes/mahasiswa');
@@ -28,6 +29,7 @@ app.use('/mahasiswa',mahasiswaControllers)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/mahasiswa', usersmhs);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
