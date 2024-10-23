@@ -1,5 +1,5 @@
 let mongoose = require("mongoose");
-let dbURI = "mongodb://localhost:27017/si5c";
+let dbURI = "mongodb+srv://paw2:si@paw2.iendmj6.mongodb.net/PAWII-SI?retryWrites=true&w=majority&appName=paw2";
 
 mongoose.connect(dbURI, {
     // useNewUrlParsen: true
@@ -10,6 +10,5 @@ mongoose.connection.on("connected", () => {
 mongoose.connection.on("error", (error) => {
     console. log("Connection Error: " + error);
 });
-mongoose.connection.on("disconnected", () => {
-    console. log("Disconnected from MongoDB");
-});
+// your db connection
+require('./mahasiswa');
