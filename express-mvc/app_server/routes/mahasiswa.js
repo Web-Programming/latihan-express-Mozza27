@@ -8,4 +8,4 @@ router.patch("/update/:id", mhsController.update); //mengupdate mahasiswa
 router.get("/show/:id", mhsController.show); //show detail mahasiswa by id
 router.delete("/delete/:id", mhsController.destroy); //delete mahasiswa by id
 
-modul.exports = router;
+module.exports = router;
